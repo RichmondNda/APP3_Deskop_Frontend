@@ -5,9 +5,9 @@
             <div class=" mt-10">
                 <img alt="Soutra logo" src="../assets/SoutraLogo.png">
             </div>
-             <div class=" mt-2 text-white  text-md">
-                <span class="font-bold text-red-900">E-Soutra</span> est une ensemble d'etudiant de l'Ecole Supérieur Africaine des Technologies 
-                de l'Information et de la Communication (<span class="font-bold text-yellow-100">ESATIC</span>) dévéllopant des solutions pour 
+             <div class=" mt-2 text-white  text-xl">
+                <span class="font-bold text-red-900">E-Soutra</span> est un ensemble d'étudiant de l'Ecole Supérieure Africaine des Technologies 
+                de l'Information et de la Communication (<span class="font-bold text-yellow-100">ESATIC</span>) développant des solutions innovantes pour 
                 l'evolution de la Cote d'Ivoire .
 
                 
@@ -22,14 +22,14 @@
                 <form @submit.prevent="Login()">
                     <div class="m-8">
                         <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-100 focus:border-transparent"  v-model="form.email" placeholder="E-mail"> 
+                        leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-gray-800 focus:border-transparent"  v-model="form.email" placeholder="E-mail"> 
                     
                         <span class=" text-sm text-red-700 font-medium " v-if="errors.email"> {{this.errors.email[0] }} </span>
    
                     </div>
                     <div class="m-8">
                         <input type="password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-                        leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-100 focus:border-transparent " v-model="form.password" placeholder="Password">    
+                        leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-gray-800 focus:border-transparent " v-model="form.password" placeholder="Password">    
                         
                         <span class=" text-sm text-red-700 font-medium " v-if="errors.password"> {{this.errors.password[0]}} </span>
 

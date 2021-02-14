@@ -1,11 +1,11 @@
 <template>
-  <div class="bg-yellow-300 text-center  pt-10 pb-10">
+  <div class="bg-gray-800 text-center  pt-10 pb-10">
 
       <div class="justify-items-start pb-4">
-          <div class="text-2xl font-bold  text-gray-700">
+          <div class="text-2xl font-bold  text-white">
               <a @click="retour()">
                    <font-awesome-icon icon="arrow-alt-circle-left" class="text-white  mr-5" ></font-awesome-icon>
-                   Liste des registre
+                   Retour
               </a>
                
         </div>
@@ -20,7 +20,7 @@
                             <span class="m-4 uppercase">DEPARTEMENT DE {{registre.lieu_naissance}}</span>
                             <br>
                             <br>
-                            <span  class=" uppercase"> COMMUNDE DE {{registre.lieu_naissance}}</span>
+                            <span  class=" uppercase"> COMMUNE DE {{registre.lieu_naissance}}</span>
                         </p>
                         <div class=" pl-8 m-8">
                             <div class="rounded-md bg-gray-400 h-20 w-20 "></div>
@@ -96,13 +96,13 @@
                 
               
                 <div style="font-size:16px" class="mt-8">
-                    Marié le ...........................................................................  à ...........................................................................
+                    Marié(e) le ...........................................................................  à ...........................................................................
                     <br><br>
                     avec ...............................................................................................................................................................
                     <br><br>
-                    Marige dissous par decision de divorce en date du ........................................................................................
+                    Mariage dissout par décision de divorce en date du ........................................................................................
                     <br><br>
-                    Décécé le .................................................. à ...............................................................................................
+                    Décédé(e) le .................................................. à ...............................................................................................
                     <br><br>
                     Certifie le présent extrait conforme aux indications portées auregistre.
                 </div>          
@@ -114,7 +114,7 @@
 
                  <div class="-pr-32">
                      <p class="mt-4">
-                        Délivrée à {{registre.lieu_naissance}} , le {{registre.date_delivrance}} 
+                        Délivré à {{registre.lieu_naissance}} . le {{registre.date_delivrance}} 
                     </p>
                     <p class="mt-4">
                         <strong> L'Officier de l'Etat civil </strong>

@@ -12,7 +12,7 @@
                 
                 <div class="flex justify-items-end mb-5">
                         <input type="text" v-model="search" class="shadow-2xl appearance-none border text-md rounded w-96 pr-10 py-3 px-4 text-gray-700
-                        leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-gray-300 focus:border-transparent " placeholder="#1254JJJ">    
+                        leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-gray-300 focus:border-transparent " placeholder="">    
                         <font-awesome-icon icon="search" class="text-xl mt-3 -ml-8 text-red-800"></font-awesome-icon>  
                 </div>
            </div>
@@ -27,7 +27,7 @@
                                 Numero 
                             </th>
                             <th scope="col" class="px-6 py-3  text-xs text-gray-800 font-semibold uppercase tracking-wider">
-                                Nom & Prenom
+                                Nom & Prenoms
                             </th>
                             <th scope="col" class="px-6 py-3  text-xs font-semibold text-gray-800 uppercase tracking-wider">
                                 Nom des parents
@@ -36,7 +36,7 @@
                                 date d'etablissement
                             </th>
                             <th scope="col" class="px-6 py-3  text-xs font-semibold text-gray-800 uppercase tracking-wider">
-                                dérniere update
+                                dérniere mise à jour
                             </th>
                             <th scope="col" class="relative px-6 py-3">
                                 <span class="sr-only">Impression</span>

@@ -22,14 +22,14 @@
                       <span class="font-semibold">Fonction  :  </span> {{user.role}}
                   </p>
                    <p class="mt-3" >
-                      <span class="font-semibold">Institue :  </span> {{user.institue}}
+                      <span class="font-semibold">Institut :  </span> {{user.institue}}
                   </p>
 
                   
                  <div class=" mt-10 mb-5">
                     <div class="m-3 mb-5 ">
                       <button class=" hover:bg-red-800 hover:text-white text-black font-bold py-2 px-4 rounded-lg
-                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="RegistresNaissance()"> REGISTRES  NAISSANCE  </button>
+                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="RegistresNaissance()"> REGISTRE NAISSANCE  </button>
                   </div>
 
                   <div class="m-3 mb-5 ">
@@ -39,13 +39,13 @@
 
                   <div class="m-3 mb-5 ">
                       <button class=" hover:bg-red-800 hover:text-white text-black font-bold py-2 px-4 rounded-lg
-                                focus:outline-none focus:shadow-outline border border-yellow-900" type="submit"> Actes de naissances </button>
+                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="Mariage()" type="submit"> Mariage</button>
                   </div>
 
                     
                 <div class=" flex justify-end m-8">
                     <button class=" bg-gradient-to-r from-red-600 to-red-900 text-white font-bold py-2 px-4 rounded-lg
-                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="Deconnection()"> Deconnection </button>
+                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="Deconnection()"> Deconnexion </button>
                 </div>
                   
                  </div>
@@ -58,15 +58,17 @@
                        Bienvenue <span class="text-yellow-400 font-semibold"> {{user.nom}} </span> sur votre espace.
                   </p>
 
-                  <p class="mt-5">
+                  <!-- <p class="mt-5">
                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam distinctio, reiciendis quisquam dicta quibusdam minus officia! Labore obcaecati ratione corrupti, velit delectus cum, ad quisquam quibusdam itaque tenetur inventore non!
                       40 43 44 98/48 05 21 34 tonton leonard frere victor N'da 
-                  </p>
+                  </p> -->
 
-                <div class="grid grid-cols-8 mt-14">
+                <div class="grid grid-cols-6 mt-14">
 
-                    <div class="col-span-3 pt-14">
-                        <div class="p-6 m-2  bg-white shadow-md rounded-xl ring-1 ring-red-100">
+                    <div></div>
+
+                    <div class="col-span-4 pt-14">
+                        <div class="p-6 m-2  bg-white shadow-xl rounded-xl ring-1 ring-red-100">
 
                             <div class="text-xl font-semibold mb-10 text-black text-md">Entrez le code de la demande</div>
                             <!-- formulaire -->
@@ -74,7 +76,7 @@
                                 <div class="m-4">
                                     
                                     <input type="text" v-model="form.code" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-                                    leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="Code de la demande ..."> 
+                                    leading-tight focus:outline-none focus:shadow-outline ring-2 ring-gray-200 focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="Code de la demande ..."> 
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.code"> {{this.errors.code[0] }} </span>
    
                                 </div>
@@ -90,13 +92,8 @@
                         </div>
                     </div>
 
-                     <div class="col-span-5">
-                        <div class=" h-96 overflow-auto p-2">
-                                <alert message="bonjojjffffffffffffffffffffffffffuor khkjdkdkkhkehdkhdjfh" alert_type="succes" ></alert>
-                                <alert message="bonjojjffffffffffffffffffffffffffuor khkjdkdkkhkehdkhdjfh" alert_type="info"></alert>
-                                <alert message="bonjojjffffffffffffffffffffffffffuor khkjdkdkkhkehdkhdjfh" alert_type="danger"></alert>
-                                <alert message="bonjojjffffffffffffffffffffffffffuor khkjdkdkkhkehdkhdjfh" alert_type="avertissement" ></alert>
-                        </div>
+                     <div class="">
+                       
                      </div>
 
 
@@ -111,10 +108,9 @@
 
 <script>
 
-import alert from './../components/aLert/alert'
 
 export default {
-  components: { alert },
+  components: {  },
   data(){
     return {
       user : this.$store.state.user,
@@ -151,6 +147,10 @@ export default {
       RegistresNaissance()
       {
           this.$router.push('/RegistresNaissance');
+      },
+      Mariage()
+      {
+          this.$router.push('/Mariage');
       }
   }
 

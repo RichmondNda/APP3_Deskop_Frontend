@@ -12,7 +12,7 @@
           </div>
           <div class="col-span-2 p-2 text-center">
               <p class="text-2xl text-red-800 font-medium ">
-                   Bienvenue à l'Hopital General de Treichville 
+                   Bienvenue à l'Hôpital Général de Treichville 
               </p>
             <div class="mt-5">
                 <p class="text-xl font-medium"> {{user.nom}} {{user.prenom}} </p>
@@ -21,7 +21,7 @@
                     <button class=" mr-3 hover:bg-yellow-400 text-black font-bold py-2 px-4 rounded-lg
                           focus:outline-none focus:shadow-outline border border-yellow-900" @click="bb_show_function()">Déclaration de naissance</button>
                     <button class=" mr-3 bg-red-700 text-white font-bold py-2 px-4 rounded-lg
-                            focus:outline-none focus:shadow-outline border border-yellow-900" @click="Deconnection()">Mon Profile</button>
+                            focus:outline-none focus:shadow-outline border border-yellow-900" @click="Deconnection()">Deconnexion</button>
                     <button class=" hover:bg-red-700 hover:text-white text-black font-bold py-2 px-4 rounded-lg
                             focus:outline-none focus:shadow-outline border border-yellow-900" @click="deces_show_function()">Déclaration de Décès</button>
                 </div>

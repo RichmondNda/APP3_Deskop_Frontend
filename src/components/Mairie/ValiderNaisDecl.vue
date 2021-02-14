@@ -10,7 +10,7 @@
                 <form @submit.prevent="submit()">
                     <div class="grid grid-cols-3 mt-8">
                         <div class="p-4">
-                            <p class="text-md mb-8 font-semibold text-gray-500"> Information sur l'enfant </p> 
+                            <p class="text-md mb-8 font-semibold text-red-800"> Informations sur l'enfant </p> 
                             <div class="m-8 ">
                                 <label for="nom_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Nom de l'enfant </label>
                                 <input type="text" id="nom_enfant" v-model="form.nom" :disabled="disabledactive ? true : false" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
@@ -19,7 +19,7 @@
 
                             </div>
                             <div class="m-8">
-                                <label for="prenom_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Prenom de l'enfant </label>
+                                <label for="prenom_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Prénoms de l'enfant </label>
                                 <input type="text" id="prenom_enfant" v-model="form.prenom" :disabled="disabledactive ? true : false"  class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                     leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">    
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.prenom"> {{this.errors.prenom[0]}} </span>
@@ -49,18 +49,18 @@
                         </div>
                         <div class="col-span-2 border-l-2 p-6 border-red-800">
                             <div>
-                                <p class="text-md font-semibold flex justify-start text-gray-400"> Information sur le pere  </p> 
+                                <p class="text-md font-semibold flex justify-start text-red-800"> Informations sur le père  </p> 
                            
                                 <div class="grid grid-cols-2">
                                     
                                     <div class="m-4">
-                                        <label for="nom_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Nom du pere  </label>
+                                        <label for="nom_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Nom du père  </label>
                                         <input type="text" v-model="form.nom_pere" :disabled="disabledactive ? true : false" id="nom_pere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">  
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.nom_pere"> {{this.errors.nom_pere[0]}} </span>  
                                     </div>
                                     <div class="m-4">
-                                        <label for="prenom_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Prenom du pere  </label>
+                                        <label for="prenom_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Prénoms du père  </label>
                                         <input type="text" v-model="form.prenom_pere" :disabled="disabledactive ? true : false" id="prenom_pere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">   
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.prenom_pere"> {{this.errors.prenom_pere[0]}} </span> 
@@ -69,13 +69,13 @@
                                 </div>
                                  <div class="grid grid-cols-2">
                                      <div class="m-4">
-                                        <label for="num_tel_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numero de telephone du pere  </label>
+                                        <label for="num_tel_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numéro de téléphone du père  </label>
                                         <input type="text" v-model="form.num_tel_pere" :disabled="disabledactive ? true : false" id="num_tel_pere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">    
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.num_tel_pere"> {{this.errors.num_tel_pere[0]}} </span>
                                     </div>
                                     <div class="m-4">
-                                        <label for="num_cni_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numero de Carte Nationale D'identité du Pere </label>
+                                        <label for="num_cni_pere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numéro de CNI du Père </label>
                                         <input type="text" v-model="form.num_cni_pere" :disabled="disabledactive ? true : false" id="num_cni_pere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">    
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.num_cni_pere"> {{this.errors.num_cni_pere[0]}} </span>
@@ -85,18 +85,18 @@
 
                             </div>
                             <div class="mt-5">
-                                <p class="text-md font-semibold flex justify-start text-gray-400"> Information sur la mere    </p> 
+                                <p class="text-md font-semibold flex justify-start text-red-800"> Informations sur la mère    </p> 
                            
                                 <div class="grid grid-cols-2">
                                     
                                     <div class="m-4">
-                                        <label for="nom_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Nom de la mere   </label>
+                                        <label for="nom_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Nom de la mère   </label>
                                         <input type="text" v-model="form.nom_mere" :disabled="disabledactive ? true : false" id="nom_mere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">    
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.nom_mere"> {{this.errors.nom_mere[0]}} </span>
                                     </div>
                                     <div class="m-4">
-                                        <label for="prnenom_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Prenom de la mere  </label>
+                                        <label for="prnenom_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Prénoms de la mère  </label>
                                         <input type="text" v-model="form.prenom_mere" :disabled="disabledactive ? true : false" id="prnenom_mere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">    
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.prenom_mere"> {{this.errors.prenom_mere[0]}} </span>
@@ -104,13 +104,13 @@
                                 </div>
                                 <div class="grid grid-cols-2">
                                      <div class="m-4">
-                                        <label for="num_tel_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numero de telephone de la Mere  </label>
+                                        <label for="num_tel_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numéro de téléphone de la mère  </label>
                                         <input type="text" v-model="form.num_tel_mere" :disabled="disabledactive ? true : false" id="num_tel_mere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">    
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.num_tel_mere"> {{this.errors.num_tel_mere[0]}} </span>
                                     </div>
                                     <div class="m-4">
-                                        <label for="num_cni_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numero de Carte Nationale D'identité de la Mere </label>
+                                        <label for="num_cni_mere_enfant" class="flex justify-start font-medium text-md text-gray-800 "> Numéro de CNI de la mère </label>
                                         <input type="text" v-model="form.num_cni_mere" :disabled="disabledactive ? true : false" id="num_cni_mere_enfant" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">    
                                     <span class=" text-sm text-red-700 font-medium " v-if="errors.num_cni_mere"> {{this.errors.num_cni_mere[0]}} </span>
@@ -127,7 +127,7 @@
                                 focus:outline-none focus:shadow-outline border border-yellow-900" @click.prevent="updateinfo()"> {{ disabledactive ?'Modifier': 'Verroullier'}} </button>
                                 
                                 <button class=" bg-red-700 text-white font-bold py-2 px-6 rounded-lg
-                                focus:outline-none focus:shadow-outline border border-yellow-900" type="submit"> Valider</button>
+                                focus:outline-none focus:shadow-outline border border-yellow-900" type="submit"> Valider </button>
                     </div>            
                    
                 </form>

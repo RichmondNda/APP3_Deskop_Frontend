@@ -4,19 +4,19 @@
              <form  @submit.prevent="Enregistrement()">
                     <div class="grid grid-cols-3 mt-8">
                         <div class="p-4">
-                            <p class="text-md mb-8 font-semibold text-gray-500"> Information sur les parents  </p> 
+                            <p class="text-md mb-8 font-semibold text-gray-500"> Informations sur les parents  </p> 
                              
                             <div class="m-8 ">
                                 <label for="nom_parent" class="flex justify-start font-medium text-md text-gray-800 "> Nom du parent </label>
                                 <input type="text" v-model="form.nomParent" id="nom_parent" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-                                    leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="N'DA">   
+                                    leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="">   
                                 <span class=" text-sm text-red-700 font-medium " v-if="errors.nomParent"> {{this.errors.nomParent[0] }} </span>
  
                             </div>
                             <div class="m-8">
-                                <label for="prenom_parent" class="flex justify-start font-medium text-md text-gray-800 "> Prenom du parent  </label>
+                                <label for="prenom_parent" class="flex justify-start font-medium text-md text-gray-800 "> Prénoms du parent  </label>
                                 <input type="text" v-model="form.prenomParent" id="prenom_parent" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
-                                    leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">
+                                    leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="">
                                 <span class=" text-sm text-red-700 font-medium " v-if="errors.prenomParent"> {{this.errors.prenomParent[0] }} </span>
    
                             </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-span-2 border-l-2 p-6 border-red-800">
                         <div>
-                            <p class="text-md font-semibold flex justify-start text-gray-400"> Informations sur le naissant    </p> 
+                            <p class="text-md font-semibold flex justify-start text-gray-400"> Informations sur le nouveau né    </p> 
 
                            
                             
@@ -76,7 +76,7 @@
   
                                     </div>
                                     <div class="m-4">
-                                        <label for="nom_sage_femme" class="flex justify-start font-medium text-md text-gray-800 "> Nom Sage femme responsable  </label>
+                                        <label for="nom_sage_femme" class="flex justify-start font-medium text-md text-gray-800 "> Nom de la  Sage-femme responsable  </label>
                                         <input type="text" id="nom_sage_femme" v-model="form.sageFemme" class="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700
                                             leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-red-800 focus:border-transparent " placeholder="REGIS RICHMOND ">  
                                            <span class=" text-sm text-red-700 font-medium " v-if="errors.sageFemme"> {{this.errors.sageFemme[0] }} </span>
@@ -89,7 +89,7 @@
                                 <div class="m-8 flex justify-between pr-6 ">
                                      <span class="text-gray-500 ml-5 select-all text-xl font-bold " v-if="code_generer"> CODE : {{code_generer}} </span>
                                     <button class=" bg-gradient-to-r from-yellow-200 to-yellow-400 text-black font-bold py-2 px-4 rounded-lg
-                                            focus:outline-none focus:shadow-outline border border-yellow-900"  type="submit"> Envoyer ma declaration</button>
+                                            focus:outline-none focus:shadow-outline border border-yellow-900"  type="submit"> Envoyer ma déclaration</button>
                                 </div>
 
                         </div>
