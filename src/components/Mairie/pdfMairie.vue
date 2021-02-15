@@ -23,20 +23,25 @@
                             <span  class=" uppercase"> COMMUNE DE {{registre.lieu_naissance}}</span>
                         </p>
                         <div class=" pl-8 m-8">
-                            <div class="rounded-md bg-gray-400 h-20 w-20 "></div>
+                            <div class=" h-36 w-36 mt-2 ml-8 ">
+                                <img src="../../assets/abidjan_logo.png"/> 
+                            </div>
                         </div>                        
                     </div>
                 </div>
                 <div>
                     <div class="float-right m-4">
-                        <!-- {{-- <img src="images/extrait/armoirie.png"/> --}} -->
+                        
                         <p class="text-xl mb-2">
                             REPUBLIQUE DE COTE D'IVOIRE 
                         </p>
                         
-                        <p class="text-4xl font-bold ">
+                        <div class="text-4xl font-bold ">
                             EXTRAIT 
-                        </p>
+                            <div class=" h-36 w-36 mt-2 ml-24 ">
+                                <img src="../../assets/emblem.png"/> 
+                            </div>
+                        </div>
                         <p class="pt-3">
                             Du registre des actes de naissance de l'Etat Civil 
                             <br> Pour l'année {{registre.annee}}
@@ -47,7 +52,7 @@
             </div>
             <!-- partie 2 -->
 
-            <div class="grid grid-cols-5 p-6 border-b-2 border-gray-500">
+            <div class="grid grid-cols-5 mt-0 p-6 border-b-2 border-gray-500">
                 
                 <div class="col-span-2">
                     <div class="text-xl font-semibold">
@@ -95,10 +100,18 @@
                 </div>
                 
               
-                <div style="font-size:16px" class="mt-8">
-                    Marié(e) le ...........................................................................  à ...........................................................................
+                <div  class="mt-8 text-xl ">
+                    Marié(e) le
+                     <span  v-if="registre.date_mariage">  {{registre.date_mariage}}  </span> 
+                     <span v-else>...........................................................................</span>  
+                     à 
+                     <span v-if="registre.lieu_mariage">  {{registre.lieu_mariage}} ............... </span> 
+                     <span v-else>...........................................................................</span>
                     <br><br>
-                    avec ...............................................................................................................................................................
+                    avec
+                    <span v-if="registre.nom_conjoint"> {{registre.nom_conjoint}} {{registre.prenom_conjoint}} </span> 
+                     <span v-else>.........................................................................................................................................</span> 
+                    
                     <br><br>
                     Mariage dissout par décision de divorce en date du ........................................................................................
                     <br><br>
