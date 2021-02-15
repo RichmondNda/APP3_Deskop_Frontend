@@ -100,7 +100,7 @@
                 </div>
                 
               
-                <div  class="mt-8 text-xl ">
+                <div  class="mt-8 text-md ">
                     Marié(e) le
                      <span  v-if="registre.date_mariage">  {{registre.date_mariage}}  </span> 
                      <span v-else>...........................................................................</span>  
@@ -115,7 +115,14 @@
                     <br><br>
                     Mariage dissout par décision de divorce en date du ........................................................................................
                     <br><br>
-                    Décédé(e) le .................................................. à ...............................................................................................
+                    Décédé(e) le 
+                    <span v-if="registre.date_deces"> {{registre.date_deces}}  </span> 
+                     <span v-else>...........................................................</span> 
+                    
+                     à 
+                     <span v-if="registre.lieu_deces"> {{registre.lieu_deces}}  </span> 
+                     <span v-else>...............................................................</span> 
+                    
                     <br><br>
                     Certifie le présent extrait conforme aux indications portées auregistre.
                 </div>          
