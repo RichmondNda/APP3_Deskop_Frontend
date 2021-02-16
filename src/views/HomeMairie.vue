@@ -32,15 +32,17 @@
                                 focus:outline-none focus:shadow-outline border border-yellow-900" @click="RegistresNaissance()"> REGISTRE NAISSANCE  </button>
                   </div>
 
-                  <div class="m-3 mb-5 ">
+                   <div class="m-3 mb-5 ">
                       <button class=" hover:bg-red-800 hover:text-white text-black font-bold py-2 px-4 rounded-lg
-                                focus:outline-none focus:shadow-outline border border-yellow-900" type="submit"> Actes de naissances </button>
+                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="Mariage()" type="submit"> Mariage</button>
                   </div>
 
                   <div class="m-3 mb-5 ">
                       <button class=" hover:bg-red-800 hover:text-white text-black font-bold py-2 px-4 rounded-lg
-                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="Mariage()" type="submit"> Mariage</button>
+                                focus:outline-none focus:shadow-outline border border-yellow-900" @click="Statistique()"  type="submit"> Statistiques </button>
                   </div>
+
+                 
 
                     
                 <div class=" flex justify-end m-8">
@@ -151,6 +153,10 @@ export default {
       Mariage()
       {
           this.$router.push('/Mariage');
+      },
+      Statistique()
+      {
+          this.$router.push('/Statistique');
       }
   }
 

@@ -14,6 +14,7 @@ import "tailwindcss/tailwind.css"
 axios.defaults.withCredentials = true ;
 
 axios.defaults.baseURL = 'http://localhost:8000';
+// axios.defaults.baseURL = 'http://192.168.1.2:8000';
 
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
